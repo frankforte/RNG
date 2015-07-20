@@ -24,9 +24,13 @@ body{font-family:arial;text-align:center;
 /* -webkit-text-size-adjust: none; prevent webkit from resizing text to fit */
     -webkit-user-select: none; /* prevent copy paste, to allow, change 'none' to 'text' */
 height:100%;
+	background:#339933;
+	color :#FFF;
+	font-size:100%;
 }
-.container{width:96%;margin:0px auto;max-width:600px;padding:1em 5%;}
-.header{width:100%;margin:auto;}
+input{color:#000;background:#FFF;}
+.container{width:96%;margin:0px auto;max-width:600px;padding:1em 2%;}
+.header{width:100%;margin:auto;font-size:2em;}
 .footer{padding:2em;}
 .header,.footer,.bigform{  }
 .bigform input{
@@ -39,7 +43,6 @@ height:100%;
 	width:2em;
 }
 .bigform button{
-	background:#339933;
 	color:#ceffce;
 	font-size:2em;
 	padding:0.2em 0.5em;
