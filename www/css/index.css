@@ -24,7 +24,7 @@ body{font-family:arial;text-align:center;
 /* -webkit-text-size-adjust: none; prevent webkit from resizing text to fit */
     -webkit-user-select: none; /* prevent copy paste, to allow, change 'none' to 'text' */
 height:100%;
-	background:#339933;
+    background-color:#4B9466;
 	color :#FFF;
 	font-size:100%;
 }
@@ -53,8 +53,8 @@ input{color:#000;background:#FFF;}
 .bigform p, .bigform label{
 font-size:2em;
 }
-.x{font-size:2em;background-color:#fff;color:#090;padding:0.5em;width:3em;margin:0.5em auto;}
-.c{display:block;  transition: width 1s, background-color 0.7s, transform 0.5s; width:3.5em; background-color:#cfc;color:#060;}
+.x{font-size:5em;background-color:#fff;color:#090;padding:1em;width:5em;margin:1em auto;}
+.c{display:block;  transition: width 1s, background-color 0.7s, transform 0.5s; width:6em; background-color:#cfc;color:#060;}
 
 .event {
     border-radius:4px;
@@ -71,7 +71,6 @@ font-size:2em;
 }
 
 .event.received {
-    background-color:#4B946A;
     display:none;
 }
 
