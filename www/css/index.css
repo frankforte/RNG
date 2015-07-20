@@ -19,64 +19,36 @@
 * {
     -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
-
-body {
-    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
-    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
-    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-color:#E4E4E4;
-    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        color-stop(0, #A7A7A7),
-        color-stop(0.51, #E4E4E4)
-    );
-    background-attachment:fixed;
-    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
-    font-size:12px;
-    height:100%;
-    margin:0px;
-    padding:0px;
-    text-transform:uppercase;
-    width:100%;
+body{font-family:arial;text-align:center; 
+-webkit-touch-callout: none;/* prevent callout to copy image, etc when tap to hold */
+/* -webkit-text-size-adjust: none; prevent webkit from resizing text to fit */
+    -webkit-user-select: none; /* prevent copy paste, to allow, change 'none' to 'text' */
+height:100%;
 }
-
-/* Portrait layout (default) */
-.app {
-    background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
-    position:absolute;             /* position in the center of the screen */
-    left:50%;
-    top:50%;
-    height:50px;                   /* text area height */
-    width:225px;                   /* text area width */
-    text-align:center;
-    padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
-    margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
-                                   /* offset horizontal: half of text area width */
+.container{width:96%;margin:0px auto;max-width:600px;padding:1em 5%;}
+.header{width:100%;margin:auto;}
+.footer{padding:2em;}
+.header,.footer,.bigform{  }
+.bigform input{
+	font-size:1.6em;
+	border:1px solid #999;
+	border-radius:2px;
+	box-shadow: inset 1px 1px 1px #99cc99,inset -1px 1px 1px #99cc99;
+	margin:0.5em auto;
+	padding:0.1em 0.2em;
+	width:2em;
 }
-
-/* Landscape layout (with min-width) */
-@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
-    .app {
-        background-position:left center;
-        padding:75px 0px 75px 170px;  /* padding-top + padding-bottom + text area = image height */
-        margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
-                                      /* offset horizontal: half of image width and text area width */
-    }
+.bigform button{
+	background:#339933;
+	color:#ceffce;
+	font-size:2em;
+	padding:0.2em 0.5em;
+	border-radius:4px;
+	border:1px solid #006600;
+	box-shadow:inset 0px -1px 0.2em #004400,inset -1px -1px 0.2em #ccffcc;
 }
-
-h1 {
-    font-size:24px;
-    font-weight:normal;
-    margin:0px;
-    overflow:visible;
-    padding:0px;
-    text-align:center;
-}
+.x{font-size:2em;background-color:#fff;color:#090;padding:0.5em;width:3em;margin:0.5em auto;}
+.c{display:block;  transition: width 1s, background-color 0.7s, transform 0.5s; width:3.5em; background-color:#cfc;color:#060;}
 
 .event {
     border-radius:4px;

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--
-    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+    Copyright (c) 2015 InteratiNet Networking Services Inc. All rights reserved.
 
     Licensed to the Apache Software Foundation (ASF) under one
     or more contributor license agreements.  See the NOTICE file
@@ -20,27 +20,48 @@
     under the License.
 -->
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="msapplication-tap-highlight" content="no" />
-        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
-    </head>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="msapplication-tap-highlight" content="no" />
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<title>RNG: Random Number Generator</title>
+	</head>
     <body>
-        <div class="app">
-            <h1>PhoneGap</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
+<div class="container app">
+<header class="header">RNG: Random Number Generator!</header>
+<div id="deviceready" class="blink">
+	<p class="event listening">Connecting to Device</p>
+	<div class="event received">
+<p>Enter the smallest and largest allowed number, then click &quot;GO&quot;</p>
+
+<div class="bigform">
+<div><label>Minimum: <input type="text" id="a" value="1"></label>
+<label>Maximum: <input type="text" id="b" value="10"></label></div>
+<div id="c" class="x">&nbsp;</div>
+<div><button id="r">Go</button>
+</div>
+</div>
+</div>
+
+<footer class="footer">
+	<p class="copyright">Copyright &copy; 2015 InteractiNet Networking Services Inc.</p>
+</footer>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+app.initialize();
+</script>
+<script type="text/javascript">
+function g(a){return document.getElementById(a);}
+var r = g("r");r.onclick=function(){
+	var c = g("c");
+	c.innerHTML = Math.floor(Math.random() * parseInt(document.getElementById("b").value)) + parseInt(document.getElementById("a").value);
+	if(c.className=="x"){c.className="x c";}else{c.className="x";setTimeout('c.className="x c"',50);}
+	//setTimeout("c.class='x';",100);
+}
+</script>
     </body>
 </html>
