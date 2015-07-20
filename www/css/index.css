@@ -44,17 +44,17 @@ input{color:#000;background:#FFF;}
 }
 .bigform button{
 	color:#ceffce;
-	font-size:4em;
+	font-size:5em;
 	padding:0.2em 0.5em;
-	border-radius:4px;
+	border-radius:8px;
 	border:1px solid #006600;
 	box-shadow:inset 0px -1px 0.2em #004400,inset -1px -1px 0.2em #ccffcc;
 }
 .bigform p, .bigform label{
 font-size:2em;
 }
-.x{font-size:5em;background-color:#fff;color:#090;padding:1em;width:5em;margin:1em auto;}
-.c{display:block;  transition: width 1s, background-color 0.7s, transform 0.5s; width:6em; background-color:#cfc;color:#060;}
+.x{font-size:5em;background-color:#4B9466;color:#090;padding:1em;width:5em;margin:1em auto;}
+.c{display:block;  transition: width 2s, background-color 2s, transform 1s; width:6em; background-color:#cfc;color:#060;}
 
 .event {
     border-radius:4px;
