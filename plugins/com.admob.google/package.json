@@ -1,8 +1,8 @@
 {
-    "version": "4.0.7",
+    "version": "2.0.14",
     "name": "com.admob.google",
     "cordova_name": "AdMob Google Ads + Tappx",
-    "description": "Google AdMob Ads plugin for Cordova, Phonegap, Ionic/Angular and Intel XDK. Monetize your app with one javascript line. Android SDK v7.5, iOS SDK v7.3.1. With support for tappx and auto-detect internet connection.",
+    "description": "Google AdMob Ads plugin for Cordova, Phonegap, Ionic/Angular and Intel XDK. Monetize your app with one javascript line. Android SDK v7.0, iOS SDK v7.0.0. With support for tappx and auto-detect internet connection.",
     "license": "MIT",
     "repo": "https://github.com/appfeel/admob-google-cordova.git",
     "issue": "https://github.com/appfeel/admob-google-cordova/issues",

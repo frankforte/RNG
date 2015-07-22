@@ -23,7 +23,8 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE.
  */
-var admob = window.admob || {};
+
+var admob = {};
 
 /**
  * This enum represents appfeel-cordova-admob plugin events

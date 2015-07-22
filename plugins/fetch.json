@@ -10,7 +10,7 @@
     "com.admob.google": {
         "source": {
             "type": "registry",
-            "id": "com.admob.google"
+            "id": "com.admob.google@2.0.14"
         },
         "is_top_level": true,
         "variables": {}
