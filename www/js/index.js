@@ -44,14 +44,23 @@ var app = {
 		 var admobid = "ca-app-pub-1629146180477982/7078785156";
 		}
 		*/
+		
+		// from readme
+		admob.setOptions({
+			publisherId:"ca-app-pub-1629146180477982/7078785156"
+		});
+		//app.bindAdEvents();
+		admob.createBannerView();
+		admob.showBannerAd(true);
+	  
+	  /*
+		// from online
 		var admobParam=new  admob.Params();
 		admobParam.isTesting=true;
-		
 		//app.bindAdEvents();
-		
 		admob.initAdmob("ca-app-pub-1629146180477982/7078785156"); // RNG id
 		admob.showBanner(admob.BannerSize.BANNER,admob.Position.BOTTOM_CENTER,admobParam);
-		
+		*/
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
