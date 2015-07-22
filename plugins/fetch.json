@@ -1,12 +1,4 @@
 {
-    "admob": {
-        "source": {
-            "type": "local",
-            "path": "D:\\Apps\\admob\\node_modules\\admob"
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
     "com.admob.google": {
         "source": {
             "type": "registry",
