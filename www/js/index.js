@@ -34,6 +34,24 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+		document.removeEventListener('deviceready', app.onDeviceReady, false);
+		
+		// AdMob code:
+		/*var isAndroid = (/(android)/i.test(navigator.userAgent));
+		 if (isAndroid) {
+		 var admobid = "ca-app-pub-1629146180477982/7078785156";
+		} else {
+		 var admobid = "ca-app-pub-1629146180477982/7078785156";
+		}
+		*/
+		var admobParam=new  admob.Params();
+		admobParam.isTesting=true;
+		
+		//app.bindAdEvents();
+		
+		admob.initAdmob("ca-app-pub-1629146180477982/7078785156"); // RNG id
+		admob.showBanner(admob.BannerSize.BANNER,admob.Position.BOTTOM_CENTER,admobParam);
+		
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -45,5 +63,18 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
-    }
+    },
+	bindAdEvents: function () {
+
+		document.addEventListener("orientationchange", function (e) {}, false);
+		// document.addEventListener(admob.events.onAdLoaded, app.onAdLoaded, false);
+		document.addEventListener(admob.events.onAdLoaded, function (e) {}, false);
+		document.addEventListener(admob.events.onAdFailedToLoad, function (e) {}, false);
+		document.addEventListener(admob.events.onAdOpened, function (e) {}, false);
+		document.addEventListener(admob.events.onAdClosed, function (e) {}, false);
+		document.addEventListener(admob.events.onAdLeftApplication, function (e) {}, false);
+		document.addEventListener(admob.events.onInAppPurchaseRequested, function (e) {}, false);
+		*/
+	}
+	
 };

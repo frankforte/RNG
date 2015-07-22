@@ -43,7 +43,7 @@
     -->
 
     <!-- Plugins -->
-
+	<gap:plugin name="com.admob.google" source="plugins.cordova.io" />
     <!-- Core plugins
     <gap:plugin name="org.apache.cordova.battery-status" />
     <gap:plugin name="org.apache.cordova.camera" />
