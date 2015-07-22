@@ -1,0 +1,48 @@
+{
+  "version": "5.0.3",
+  "name": "admob",
+  "cordova_name": "AdmobPlugin",
+  "description": "Google AdMob plugin for Cordova,phonegap and XDK",
+  "license": "Apache 2.0 License",
+  "repo": "https://github.com/admob-google/admob-phonegap",
+  "issue": "https://github.com/admob-google/admob-cordova/issues",
+  "keywords": [
+    "ad",
+    "admob",
+    "google",
+    "google-play-service",
+    "iad",
+    "flurry",
+    "device",
+    "adwhirl",
+    "ecosystem:cordova",
+    "cordova",
+    "phonegap",
+    "cordova 5"
+  ],
+  "platforms": [
+    "android",
+    "ios"
+  ],
+  "engines": [],
+  "_id": "admob@5.0.3",
+  "_shasum": "56d2b5000200e2a475a9b9072b69f83ec25d261e",
+  "_from": "admob@*",
+  "_npmVersion": "1.4.9",
+  "_npmUser": {
+    "name": "admob",
+    "email": "gooogleadmob@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "admob",
+      "email": "gooogleadmob@gmail.com"
+    }
+  ],
+  "dist": {
+    "shasum": "56d2b5000200e2a475a9b9072b69f83ec25d261e",
+    "tarball": "http://registry.npmjs.org/admob/-/admob-5.0.3.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/admob/-/admob-5.0.3.tgz"
+}
