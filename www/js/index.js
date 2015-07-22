@@ -74,7 +74,6 @@ var app = {
 		document.addEventListener(admob.events.onAdClosed, function (e) {}, false);
 		document.addEventListener(admob.events.onAdLeftApplication, function (e) {}, false);
 		document.addEventListener(admob.events.onInAppPurchaseRequested, function (e) {}, false);
-		*/
 	}
 	
 };
